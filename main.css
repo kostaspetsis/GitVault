@@ -55,3 +55,32 @@ p {
 	width:100%;
 	height:400px;
 }
+.loginBtn{
+	/* background-color:green;
+	color:white;
+	border:2px solid rgba(0,180,0); */
+	width:auto;
+	display: flex;
+  align-items: center;
+  justify-content: center;
+	
+}
+.login{
+	align-items: center;
+	justify-content: center;
+	border:2ps solid green;
+}
+
+.alignHorizontally{
+	display:inline;
+}
+
+.active{
+    color:            rgb(219, 38, 38);
+    background-color: rgb(47, 255, 203);
+}
+.nav-item{
+	/* color:red; */
+	padding:10px;
+	/* border:2px solid red; */
+}

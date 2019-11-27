@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html>
 <title>Modal Popup Box</title>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>GitVault</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+<link rel="stylesheet" type="text/css" media="screen" href="main.css" />	
+<script src="main.js"></script>
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+
 <style>
 *{margin:0px; padding:0px; font-family:Helvetica, Arial, sans-serif;}
 
@@ -77,7 +90,20 @@ button:hover {
     color: red;
     cursor: pointer;
 }
-
+nav div ul li a{
+    color:red;
+    color:black;
+    background-color: black;
+    
+    border: 2px solid red;
+}
+nav div ul li a .active{
+    color:red;
+    color:black;
+    background-color: blue;
+    
+    border: 2px solid red;
+}
 /* Add Zoom Animation */
 .animate {
     animation: zoom 0.6s
@@ -87,8 +113,17 @@ button:hover {
     to {transform: scale(1)}
 }
 </style>
-</style>
-<body background="../background1.png">
+
+<body>
+
+<div id="nav-placeholder"></div>
+
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script>
+    $.get("../nav.html", function(data){
+    $("#nav-placeholder").replaceWith(data);
+});
+</script>
 
 <h1 style="text-align:center; font-size:50px; color:#fff">Modal Popup Box Login Form</h1>
 
