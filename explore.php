@@ -9,7 +9,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
 		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-		
+		<script src="setActiveNavItem.js"></script>
 		<link rel="stylesheet" type="text/css" media="screen" href="main.css" />	
 		<!-- <script src="main.js"></script> -->
 		<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -47,6 +47,7 @@
 				/* border:2px solid red; */
 			}
 		</style>
+		
 	</head>
 	<body>
 		<!-- Header, icon -->
@@ -60,7 +61,7 @@
 			});
 			</script> -->
 			<?php include 'nav.html'; ?>
-			<script src="setActiveNavItem.js"></script>
+			
 			<!-- Navigation Bar -->
 				<img src="Logo.png" alt="" width=400>
 				<!-- <h1>Upload your code to GitVault now!</h1>
