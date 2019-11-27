@@ -1,4 +1,4 @@
-make:index explore profile projects guide
+make:index explore profile projects guide viewProject
 index:index.php
 	php index.php > index.html
 explore:explore.php
@@ -9,3 +9,5 @@ projects:projects.php
 	php projects.php > projects.html
 guide:guide.php
 	php guide.php > guide.html
+viewProject:viewProject.php
+	php viewProject.php > viewProject.html
