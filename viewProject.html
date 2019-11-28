@@ -27,7 +27,7 @@
 	}
 	.projectInfo{
 		margin:30px;
-		background-image:linear-gradient(rgb(0, 32, 92),rgb(129, 133, 189));
+		background-image:linear-gradient(rgb(0, 89, 255),rgb(255,255,255));
 		/* background-color: aqua; */
 	}
 	.alignHorizontally{
