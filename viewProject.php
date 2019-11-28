@@ -43,6 +43,7 @@
 <body>
 
 
+<?php include 'nav.html'; ?>
 
 	<!-- Header, icon -->
 	<div class="containerHead" align="center">

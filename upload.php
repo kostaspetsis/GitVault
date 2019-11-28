@@ -34,45 +34,7 @@
 			});
 			</script> -->
 
-		<!-- Navigation Bar -->
-<nav class="navbar navbar-expand-md navbar-dark sticky-top">
-	<!-- <a class="navbar-brand" href="index.html" style="color:rgb(47, 255, 203);">GitVault</a> -->
-	<img src="Logo.png" alt="" width=100>
-	<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb" aria-expanded="true">
-		<span class="navbar-toggler-icon"></span>
-	</button>
-	<div id="navb" class="navbar-collapse collapse hide">
-		<ul id="navbar-ul" class="navbar-nav">
-			<li class="nav-item active">
-				<a class="nav-link" href="explore.html">Explore</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="upload.html">Upload</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="profile.html">Profile</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="projects.html">Projects</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="guide.html">Guide</a>
-			</li>
-		</ul>
-	
-		<ul class="nav navbar-nav ml-auto">
-		<li class="nav-item">
-			<!-- <a class="nav-link" href="#"><span class="fas fa-user"></span> Sign Up</a> -->
-			<a class="login" onclick="document.getElementById('modal-wrapper').style.display='block'">Sign Up</a>
-		</li>
-		<li class="nav-item">
-			<!-- <a class="nav-link" href="#"><span class="fas fa-sign-in-alt"></span> Login</a> -->
-			<a class="login" onclick="document.getElementById('modal-wrapper').style.display='block'">Login</a>
-		</li>
-		</ul>
-	</div>
-</nav>
-<!-- Navigation Bar -->
+		<?php include 'nav.html'; ?>
 		
 		<img src="Logo.png" alt="" width=400>
 		<h1>Upload your code to GitVault now!</h1>

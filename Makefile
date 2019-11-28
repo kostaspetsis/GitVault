@@ -1,8 +1,10 @@
-make:index explore profile projects guide viewProject
-index:index.php
-	php index.php > index.html
+make:index upload profile projects guide viewProject explore
 explore:explore.php
 	php explore.php > explore.html
+upload:upload.php
+	php upload.php > upload.html
+index:index.php
+	php index.php > index.html
 profile:profile.php
 	php profile.php > profile.html
 projects:projects.php
