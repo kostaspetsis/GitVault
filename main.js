@@ -9,8 +9,32 @@ function drag(ev) {
 
 function drop(ev) {
   ev.preventDefault();
-  var data = ev.dataTransfer.getData("text");
-  ev.target.appendChild(document.getElementById(data));
+  // var data = ev.dataTransfer.getData("text");
+	// ev.target.appendChild(document.getElementById(data));
+	console.log("Dropped something");
+	
+	$('#pleaseWaitDialog').modal('show');
+	var i = 40;                     //  set your counter to 1
+
+	function myLoop () {           //  create a loop function
+		setTimeout(function () {    //  call a 3s setTimeout when the loop is called
+			// $('#progressBarValue').css('width',''+i);
+			// $('#progressBarValue').attr('aria-valuenow',''+i);
+
+
+			$('#progressBarValue').attr('aria-valuenow', i).css('width', i);
+
+
+			//alert('hello');          //  your code here
+				i++;                     //  increment the counter
+				if (i < 200) {            //  if the counter < 10, call the loop function
+					myLoop();             //  ..  again which will trigger another 
+				}                        //  ..  setTimeout()
+		}, 10)
+	}
+
+	myLoop();  
+	
 }
 
 // $("#onClickFileManager").click(function() {
@@ -25,7 +49,7 @@ $(document).on("click", "#onClickFileManager", function(){
 });
 
 $(document).ready(function(){
-    $("#theFileInput").click();
+		$("#theFileInput").click();
 });
 
 function readURL(input) {

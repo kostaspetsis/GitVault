@@ -37,13 +37,37 @@
 	.projectName{
 		color:white;
 	}
+
+		.comment-section{
+				background-color:plum;
+				padding-top:50px;
+				padding-left:10px;
+				border:2px solid rgb(212, 101, 212);
+			}
+			.user-name{
+				color:black;
+				padding:0;
+				margin-right: 5px;
+			}
+			.user-comment{
+				margin-left:40px;
+				color:rgba(49, 49, 49, 0.8);
+			}
+			.comment-item:nth-child(even){
+				border:5px solid rgb(124, 124, 124);
+				border-radius:20px;
+				padding:5px;
+			}
+			.comment-item:nth-child(odd){
+				border:5px solid rgb(20, 20, 20);
+				border-radius:20px;
+				padding:5px;
+			}
+		
 	</style>
 	
 </head>
 <body>
-
-
-<?php include 'nav.html'; ?>
 
 	<!-- Header, icon -->
 	<div class="containerHead" align="center">
@@ -75,6 +99,55 @@
 			</div>
 		</li>
 	</ul>
+
+
+	<div class="alignH">
+		<div class="alignV">
+			<button class="btn btn-success" style="border:5px solid green;">Like</button>
+			<p>Like:15</p>
+		</div>
+		<div class="alignV">
+			<button class="btn btn-danger" style="border:5px solid red;">Dislike</button>
+			<p>Dislike:2</p>
+		</div>
+	</div>
+	
+	<div class="alignV1 comment-section">
+		<h2>Σχόλια χρηστών</h2>
+		
+		<div class="comment-item">
+			<div class="alignH">
+				<img class="avatar" src="Profile1.jpeg" style="width:30px;height:30px;" alt="Avatar">
+				<p class="user-name">Χρήστης 1</p>
+			</div>
+			<p class="user-comment">Great project.Can i contribute?</p>
+		</div>
+
+		<div class="comment-item">
+			<div class="alignH">
+				<img class="avatar" src="Profile1.jpeg" style="width:30px;height:30px;" alt="Avatar">
+				<p class="user-name">Χρήστης 2</p>
+			</div>
+			<p class="user-comment">Where is the code?</p>
+		</div>
+
+		<div class="comment-item">
+			<div class="alignH">
+				<img class="avatar" src="1.png" style="width:30px;height:30px;" alt="Avatar">
+				<p class="user-name">Χρήστης 3</p>
+			</div>
+			<p class="user-comment">I Like it!!!</p>
+		</div>
+
+		<div class="comment-item">
+			<div class="alignH">
+				<img class="avatar" src="Profile2.png" style="width:30px;height:30px;" alt="Avatar">
+				<p class="user-name">Χρήστης 3</p>
+			</div>
+			<p class="user-comment">This is a basic project.:(</p>
+		</div>
+
+	</div>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" ></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
