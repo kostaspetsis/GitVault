@@ -1,0 +1,25 @@
+{
+  "name": "gitvault",
+  "version": "0.1.0",
+  "description": "A simple website built with Node, Express",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "Petsis Konstantinos, Dimitris Ziogas",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kostaspetsis/GitVault.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kostaspetsis/GitVault/issues"
+  },
+  "homepage": "https://github.com/kostaspetsis/GitVault#readme"
+}
